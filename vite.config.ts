@@ -17,7 +17,7 @@ export default defineConfig({
       name: 'ViteReactLibStarter'
     },
     rollupOptions: {
-      external: ['react'],
+      external: ['react', 'react-dom'],
       output: {
         globals: {
           react: 'React'
