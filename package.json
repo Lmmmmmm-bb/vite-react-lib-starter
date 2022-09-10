@@ -1,6 +1,6 @@
 {
   "name": "vite-react-lib-starter",
-  "version": "0.0.6",
+  "version": "0.0.8",
   "license": "MIT",
   "packageManager": "pnpm@7.11.0",
   "author": {
@@ -20,14 +20,15 @@
     }
   },
   "scripts": {
-    "dev": "vite & pnpm style:watch",
+    "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
     "lint:fix": "eslint --ext .tsx,.ts,.js ./lib --fix",
     "lint:check": "pnpm prettier --check ./lib",
     "lint:rewrite": "pnpm prettier --write ./lib",
     "prepare": "husky install",
-    "style:watch": "pnpm typed-scss-modules lib --watch --ignore \"**/index.scss\""
+    "prepublishOnly": "pnpm build",
+    "release": "bumpp --commit --tag --push && pnpm publish --no-git-checks"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -42,6 +43,7 @@
     "@typescript-eslint/eslint-plugin": "^5.35.1",
     "@typescript-eslint/parser": "^5.35.1",
     "@vitejs/plugin-react": "^2.0.1",
+    "bumpp": "^8.2.1",
     "eslint": "^8.23.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
