@@ -1,0 +1,63 @@
+{
+  "name": "vite-react-lib-starter",
+  "version": "0.0.6",
+  "license": "MIT",
+  "packageManager": "pnpm@7.11.0",
+  "author": {
+    "email": "lmmmmmm12138@gmail.com",
+    "name": "_lmmmmmm"
+  },
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
+  "main": "dist/vite-react-lib-starter.umd.js",
+  "module": "dist/vite-react-lib-starter.mjs",
+  "exports": {
+    ".": {
+      "import": "./dist/vite-react-lib-starter.mjs",
+      "require": "./dist/vite-react-lib-starter.umd.js"
+    }
+  },
+  "scripts": {
+    "dev": "vite & pnpm style:watch",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint:fix": "eslint --ext .tsx,.ts,.js ./lib --fix",
+    "lint:check": "pnpm prettier --check ./lib",
+    "lint:rewrite": "pnpm prettier --write ./lib",
+    "prepare": "husky install",
+    "style:watch": "pnpm typed-scss-modules src --watch --ignore \"**/index.scss\""
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sass": "^1.54.5",
+    "vite-react-lib-starter": "^0.0.6"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.0",
+    "@types/node": "^18.7.13",
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "@typescript-eslint/eslint-plugin": "^5.35.1",
+    "@typescript-eslint/parser": "^5.35.1",
+    "@vitejs/plugin-react": "^2.0.1",
+    "eslint": "^8.23.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.31.1",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "typed-scss-modules": "^6.5.0",
+    "typescript": "^4.8.2",
+    "vite": "^3.0.9",
+    "vite-plugin-dts": "^1.4.1"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write ./lib --ignore-unknown",
+    "*.{ts,tsx}": "eslint --ext .tsx,.ts,.js ./lib --fix"
+  }
+}
