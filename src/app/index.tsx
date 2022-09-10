@@ -1,6 +1,5 @@
 import React, { FC } from 'react';
-import { Foo } from '../../dist/vite-react-lib-starter.mjs';
-import { Bar, HelloWorld } from 'vite-react-lib-starter';
+import { Foo, Bar, HelloWorld } from '../../dist/vite-react-lib-starter.mjs';
 
 const App: FC = () => {
   return (
