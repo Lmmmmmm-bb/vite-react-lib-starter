@@ -38,7 +38,7 @@ export default defineConfig(({ mode }) => {
     resolve: {
       alias: { '~': resolve(__dirname, 'lib') }
     },
-    test: { globals: true },
+    test: { globals: true, environment: 'jsdom' },
     ...config
   };
 });
