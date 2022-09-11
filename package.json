@@ -21,6 +21,9 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest run --coverage",
     "lint:fix": "eslint --ext .tsx,.ts,.js ./lib --fix",
     "lint:check": "pnpm prettier --check ./lib",
     "lint:rewrite": "pnpm prettier --write ./lib",
@@ -45,6 +48,7 @@
     "@typescript-eslint/eslint-plugin": "^5.35.1",
     "@typescript-eslint/parser": "^5.35.1",
     "@vitejs/plugin-react": "^2.0.1",
+    "@vitest/ui": "^0.23.2",
     "bumpp": "^8.2.1",
     "eslint": "^8.23.0",
     "eslint-config-prettier": "^8.5.0",
@@ -55,9 +59,11 @@
     "prettier": "^2.7.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-is": "^18.2.0",
     "typescript": "^4.8.2",
     "vite": "^3.0.9",
-    "vite-plugin-dts": "^1.4.1"
+    "vite-plugin-dts": "^1.4.1",
+    "vitest": "^0.23.2"
   },
   "lint-staged": {
     "**/*": "prettier --write ./lib --ignore-unknown",

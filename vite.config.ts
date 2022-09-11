@@ -1,7 +1,7 @@
 import { resolve } from 'path';
 import Dts from 'vite-plugin-dts';
 import react from '@vitejs/plugin-react';
-import { UserConfigExport, defineConfig } from 'vite';
+import { UserConfigExport, defineConfig } from 'vitest/config';
 
 // lib build config
 const libBuildConfig: UserConfigExport = {
@@ -18,9 +18,7 @@ const libBuildConfig: UserConfigExport = {
     rollupOptions: {
       external: ['react', 'react-dom'],
       output: {
-        globals: {
-          react: 'React'
-        }
+        globals: { react: 'React' }
       }
     }
   }
@@ -38,10 +36,9 @@ export default defineConfig(({ mode }) => {
 
   return {
     resolve: {
-      alias: {
-        '~': resolve(__dirname, 'lib')
-      }
+      alias: { '~': resolve(__dirname, 'lib') }
     },
+    test: { globals: true },
     ...config
   };
 });
