@@ -23,6 +23,7 @@ const libBuildConfig: UserConfigExport = {
 };
 
 const buildConfig: UserConfigExport = {
+  base: '/vite-react-lib-starter/',
   plugins: [react()]
 };
 
