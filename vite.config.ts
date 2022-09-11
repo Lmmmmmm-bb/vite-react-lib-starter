@@ -1,16 +1,10 @@
 import { resolve } from 'path';
 import Dts from 'vite-plugin-dts';
-import { defineConfig } from 'vite';
+import { UserConfigExport, defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
-// https://vitejs.dev/config/
-export default defineConfig({
+const libBuildConfig: UserConfigExport = {
   plugins: [Dts({ staticImport: true, insertTypesEntry: true }), react()],
-  resolve: {
-    alias: {
-      '~': resolve(__dirname, 'lib')
-    }
-  },
   build: {
     lib: {
       entry: resolve(__dirname, 'lib/main.ts'),
@@ -26,4 +20,22 @@ export default defineConfig({
       }
     }
   }
+};
+
+const buildConfig: UserConfigExport = {
+  plugins: [react()]
+};
+
+// https://vitejs.dev/config/
+export default defineConfig(({ mode }) => {
+  const config = mode === 'lib' ? libBuildConfig : buildConfig;
+
+  return {
+    resolve: {
+      alias: {
+        '~': resolve(__dirname, 'lib')
+      }
+    },
+    ...config
+  };
 });

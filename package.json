@@ -1,6 +1,6 @@
 {
   "name": "vite-react-lib-starter",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "license": "MIT",
   "packageManager": "pnpm@7.11.0",
   "author": {
@@ -26,7 +26,7 @@
     "lint:rewrite": "pnpm prettier --write ./lib",
     "prepare": "husky install",
     "prepublishOnly": "tsc && vite build --mode lib",
-    "release": "bumpp --commit --tag"
+    "release": "bumpp --commit --tag --push && pnpm publish --no-git-checks"
   },
   "dependencies": {
     "react": "^18.2.0",
