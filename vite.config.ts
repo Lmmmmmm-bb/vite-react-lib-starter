@@ -14,7 +14,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, 'lib/main.ts'),
-      name: 'ViteReactLibStarter'
+      name: 'ViteReactLibStarter',
+      formats: ['es']
     },
     rollupOptions: {
       external: ['react', 'react-dom'],

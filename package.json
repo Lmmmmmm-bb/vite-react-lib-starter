@@ -11,12 +11,10 @@
     "dist"
   ],
   "types": "dist/index.d.ts",
-  "main": "dist/vite-react-lib-starter.umd.js",
   "module": "dist/vite-react-lib-starter.mjs",
   "exports": {
     ".": {
-      "import": "./dist/vite-react-lib-starter.mjs",
-      "require": "./dist/vite-react-lib-starter.umd.js"
+      "import": "./dist/vite-react-lib-starter.mjs"
     }
   },
   "scripts": {
