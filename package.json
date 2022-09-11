@@ -26,6 +26,7 @@
     "test": "vitest",
     "test:ui": "vitest --ui",
     "test:coverage": "vitest run --coverage",
+    "test:update": "vitest -u",
     "lint:fix": "eslint --ext .tsx,.ts,.js . --fix",
     "lint:check": "pnpm prettier --check .",
     "lint:rewrite": "pnpm prettier --write .",

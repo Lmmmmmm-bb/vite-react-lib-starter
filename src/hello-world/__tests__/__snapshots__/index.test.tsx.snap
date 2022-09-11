@@ -1,3 +1,7 @@
 // Vitest Snapshot v1
 
-exports[`hello-world > test 1`] = `<HelloWorld />`;
+exports[`hello-world > test 1`] = `
+<HelloWorld
+  message="Hello"
+/>
+`;
