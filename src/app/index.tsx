@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { Foo, Bar, HelloWorld } from '../../lib/main';
+import { Foo, Bar, HelloWorld } from '~/main';
 
 const App: FC = () => {
   return (
