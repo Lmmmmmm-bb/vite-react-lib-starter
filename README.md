@@ -4,7 +4,7 @@ A vite react lib starter.
 
 ## Checklist
 
-- package
+- package.json
   - [ ] name
   - [ ] version
   - [ ] author
@@ -14,8 +14,9 @@ A vite react lib starter.
   - [ ] types
   - [ ] module
 - vite.config.ts
-  - buildConfig
-    - [ ] base
-  - libBuildConfig
-    - build
-      - [ ] lib.name
+  - [ ] build
+- playground
+  - tsconfig.json
+    - [ ] paths
+  - vite.config.ts
+    - [ ] alias

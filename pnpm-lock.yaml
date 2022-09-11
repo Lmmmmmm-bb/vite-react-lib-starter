@@ -1,64 +1,84 @@
 lockfileVersion: 5.4
 
-specifiers:
-  '@commitlint/cli': ^17.1.2
-  '@commitlint/config-conventional': ^17.1.0
-  '@types/node': ^18.7.13
-  '@types/react': ^18.0.17
-  '@types/react-dom': ^18.0.6
-  '@types/styled-components': ^5.1.26
-  '@typescript-eslint/eslint-plugin': ^5.35.1
-  '@typescript-eslint/parser': ^5.35.1
-  '@vitejs/plugin-react': ^2.0.1
-  '@vitest/ui': ^0.23.2
-  bumpp: ^8.2.1
-  eslint: ^8.23.0
-  eslint-config-prettier: ^8.5.0
-  eslint-plugin-prettier: ^4.2.1
-  eslint-plugin-react: ^7.31.1
-  husky: ^8.0.1
-  jsdom: ^20.0.0
-  lint-staged: ^13.0.3
-  prettier: ^2.7.1
-  react: ^18.2.0
-  react-dom: ^18.2.0
-  react-is: ^18.2.0
-  styled-components: ^5.3.5
-  typescript: ^4.8.2
-  vite: ^3.0.9
-  vite-plugin-dts: ^1.4.1
-  vitest: ^0.23.2
+importers:
 
-dependencies:
-  styled-components: 5.3.5_7i5myeigehqah43i5u7wbekgba
+  .:
+    specifiers:
+      '@commitlint/cli': ^17.1.2
+      '@commitlint/config-conventional': ^17.1.0
+      '@types/node': ^18.7.13
+      '@types/react': ^18.0.17
+      '@types/react-dom': ^18.0.6
+      '@types/styled-components': ^5.1.26
+      '@typescript-eslint/eslint-plugin': ^5.35.1
+      '@typescript-eslint/parser': ^5.35.1
+      '@vitejs/plugin-react': ^2.0.1
+      '@vitest/ui': ^0.23.2
+      bumpp: ^8.2.1
+      eslint: ^8.23.0
+      eslint-config-prettier: ^8.5.0
+      eslint-plugin-prettier: ^4.2.1
+      eslint-plugin-react: ^7.31.1
+      husky: ^8.0.1
+      jsdom: ^20.0.0
+      lint-staged: ^13.0.3
+      prettier: ^2.7.1
+      react: ^18.2.0
+      react-is: ^18.2.0
+      styled-components: ^5.3.5
+      typescript: ^4.8.2
+      vite: ^3.0.9
+      vite-plugin-dts: ^1.4.1
+      vitest: ^0.23.2
+    dependencies:
+      styled-components: 5.3.5_tgppsxbwbt7anzz66bgq6kuiw4
+    devDependencies:
+      '@commitlint/cli': 17.1.2
+      '@commitlint/config-conventional': 17.1.0
+      '@types/node': 18.7.13
+      '@types/react': 18.0.17
+      '@types/react-dom': 18.0.6
+      '@types/styled-components': 5.1.26
+      '@typescript-eslint/eslint-plugin': 5.35.1_pfwtupu3r4wxmgbx6hj7gwmyuu
+      '@typescript-eslint/parser': 5.35.1_yqf6kl63nyoq5megxukfnom5rm
+      '@vitejs/plugin-react': 2.0.1_vite@3.0.9
+      '@vitest/ui': 0.23.2
+      bumpp: 8.2.1
+      eslint: 8.23.0
+      eslint-config-prettier: 8.5.0_eslint@8.23.0
+      eslint-plugin-prettier: 4.2.1_tgumt6uwl2md3n6uqnggd6wvce
+      eslint-plugin-react: 7.31.1_eslint@8.23.0
+      husky: 8.0.1
+      jsdom: 20.0.0
+      lint-staged: 13.0.3
+      prettier: 2.7.1
+      react: 18.2.0
+      react-is: 18.2.0
+      typescript: 4.8.2
+      vite: 3.0.9
+      vite-plugin-dts: 1.4.1_vite@3.0.9
+      vitest: 0.23.2_nfqmtj2i2wbshsdqjmmrigkz7a
 
-devDependencies:
-  '@commitlint/cli': 17.1.2
-  '@commitlint/config-conventional': 17.1.0
-  '@types/node': 18.7.13
-  '@types/react': 18.0.17
-  '@types/react-dom': 18.0.6
-  '@types/styled-components': 5.1.26
-  '@typescript-eslint/eslint-plugin': 5.35.1_pfwtupu3r4wxmgbx6hj7gwmyuu
-  '@typescript-eslint/parser': 5.35.1_yqf6kl63nyoq5megxukfnom5rm
-  '@vitejs/plugin-react': 2.0.1_vite@3.0.9
-  '@vitest/ui': 0.23.2
-  bumpp: 8.2.1
-  eslint: 8.23.0
-  eslint-config-prettier: 8.5.0_eslint@8.23.0
-  eslint-plugin-prettier: 4.2.1_tgumt6uwl2md3n6uqnggd6wvce
-  eslint-plugin-react: 7.31.1_eslint@8.23.0
-  husky: 8.0.1
-  jsdom: 20.0.0
-  lint-staged: 13.0.3
-  prettier: 2.7.1
-  react: 18.2.0
-  react-dom: 18.2.0_react@18.2.0
-  react-is: 18.2.0
-  typescript: 4.8.2
-  vite: 3.0.9
-  vite-plugin-dts: 1.4.1_vite@3.0.9
-  vitest: 0.23.2_nfqmtj2i2wbshsdqjmmrigkz7a
+  playground:
+    specifiers:
+      '@types/node': ^18.7.13
+      '@types/react': ^18.0.17
+      '@types/react-dom': ^18.0.6
+      '@vitejs/plugin-react': ^2.0.1
+      react: ^18.2.0
+      react-dom: ^18.2.0
+      typescript: ^4.8.2
+      vite: ^3.0.9
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    devDependencies:
+      '@types/node': 18.7.13
+      '@types/react': 18.0.17
+      '@types/react-dom': 18.0.6
+      '@vitejs/plugin-react': 2.0.1_vite@3.0.9
+      typescript: 4.8.2
+      vite: 3.0.9
 
 packages:
 
@@ -1154,7 +1174,7 @@ packages:
       babel-plugin-syntax-jsx: 6.18.0
       lodash: 4.17.21
       picomatch: 2.3.1
-      styled-components: 5.3.5_7i5myeigehqah43i5u7wbekgba
+      styled-components: 5.3.5_tgppsxbwbt7anzz66bgq6kuiw4
     dev: false
 
   /babel-plugin-syntax-jsx/6.18.0:
@@ -3415,6 +3435,7 @@ packages:
       loose-envify: 1.4.0
       react: 18.2.0
       scheduler: 0.23.0
+    dev: false
 
   /react-is/16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
@@ -3610,6 +3631,7 @@ packages:
     resolution: {integrity: sha512-CtuThmgHNg7zIZWAXi3AsyIzA3n4xx7aNyjwC2VJldO2LMVDhFK+63xGqq6CsJH4rTAt6/M+N4GhZiDYPx9eUw==}
     dependencies:
       loose-envify: 1.4.0
+    dev: false
 
   /semver/5.7.1:
     resolution: {integrity: sha512-sauaDf/PZdVgrLTNYHRtpXa1iRiKcaebiKQ1BJdpQlWH2lCvexQdX55snPFyK7QzpudqbCI0qXFfOasHdyNDGQ==}
@@ -3847,7 +3869,7 @@ packages:
       acorn: 8.8.0
     dev: true
 
-  /styled-components/5.3.5_7i5myeigehqah43i5u7wbekgba:
+  /styled-components/5.3.5_tgppsxbwbt7anzz66bgq6kuiw4:
     resolution: {integrity: sha512-ndETJ9RKaaL6q41B69WudeqLzOpY1A/ET/glXkNZ2T7dPjPqpPCXXQjDFYZWwNnE5co0wX+gTCqx9mfxTmSIPg==}
     engines: {node: '>=10'}
     requiresBuild: true
@@ -3865,7 +3887,6 @@ packages:
       css-to-react-native: 3.0.0
       hoist-non-react-statics: 3.3.2
       react: 18.2.0
-      react-dom: 18.2.0_react@18.2.0
       react-is: 18.2.0
       shallowequal: 1.1.0
       supports-color: 5.5.0

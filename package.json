@@ -19,22 +19,22 @@
   "types": "dist/index.d.ts",
   "module": "dist/vite-react-lib-starter.mjs",
   "scripts": {
-    "dev": "vite",
+    "dev": "pnpm --filter playground dev",
     "build": "tsc && vite build",
-    "preview": "vite preview",
+    "build:playground": "pnpm --filter playground build",
+    "preview": "pnpm --filter playground preview",
     "test": "vitest",
     "test:ui": "vitest --ui",
     "test:coverage": "vitest run --coverage",
-    "lint:fix": "eslint --ext .tsx,.ts,.js ./lib --fix",
-    "lint:check": "pnpm prettier --check ./lib",
-    "lint:rewrite": "pnpm prettier --write ./lib",
+    "lint:fix": "eslint --ext .tsx,.ts,.js . --fix",
+    "lint:check": "pnpm prettier --check .",
+    "lint:rewrite": "pnpm prettier --write .",
     "prepare": "husky install",
-    "prepublishOnly": "tsc && vite build --mode lib",
+    "prepublishOnly": "pnpm build",
     "release": "bumpp --commit --tag --push && pnpm publish --no-git-checks"
   },
   "peerDependencies": {
-    "react": ">=16.13.1",
-    "react-dom": ">=16.13.1"
+    "react": ">=16.13.1"
   },
   "dependencies": {
     "styled-components": "^5.3.5"
@@ -60,7 +60,6 @@
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
     "react-is": "^18.2.0",
     "typescript": "^4.8.2",
     "vite": "^3.0.9",
@@ -68,7 +67,7 @@
     "vitest": "^0.23.2"
   },
   "lint-staged": {
-    "**/*": "prettier --write ./lib --ignore-unknown",
-    "*.{ts,tsx}": "eslint --ext .tsx,.ts,.js ./lib --fix"
+    "**/*": "prettier --write . --ignore-unknown",
+    "*.{ts,tsx}": "eslint --ext .tsx,.ts,.js . --fix"
   }
 }

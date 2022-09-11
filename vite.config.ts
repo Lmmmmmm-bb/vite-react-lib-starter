@@ -1,17 +1,15 @@
 import { resolve } from 'path';
 import Dts from 'vite-plugin-dts';
 import react from '@vitejs/plugin-react';
-import { UserConfigExport, defineConfig } from 'vitest/config';
+import { defineConfig } from 'vitest/config';
 
-// lib build config
-const libBuildConfig: UserConfigExport = {
-  plugins: [
-    Dts({ staticImport: true, insertTypesEntry: true, include: 'lib' }),
-    react()
-  ],
+// https://vitejs.dev/config/
+export default defineConfig({
+  test: { globals: true, environment: 'jsdom' },
+  plugins: [Dts({ staticImport: true, insertTypesEntry: true }), react()],
   build: {
     lib: {
-      entry: resolve(__dirname, 'lib/main.ts'),
+      entry: resolve(__dirname, 'src/main.ts'),
       name: 'ViteReactLibStarter',
       formats: ['es']
     },
@@ -22,23 +20,4 @@ const libBuildConfig: UserConfigExport = {
       }
     }
   }
-};
-
-// gh pages build config
-const buildConfig: UserConfigExport = {
-  base: '/vite-react-lib-starter/',
-  plugins: [react()]
-};
-
-// https://vitejs.dev/config/
-export default defineConfig(({ mode }) => {
-  const config = mode === 'lib' ? libBuildConfig : buildConfig;
-
-  return {
-    resolve: {
-      alias: { '~': resolve(__dirname, 'lib') }
-    },
-    test: { globals: true, environment: 'jsdom' },
-    ...config
-  };
 });

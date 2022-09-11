@@ -16,8 +16,10 @@
     "noImplicitAny": false,
     "baseUrl": ".",
     "jsx": "react-jsx",
-    "declaration": true,
-    "types": ["vitest/globals"]
+    "paths": {
+      "~/*": ["src/*"],
+      "vite-react-lib-starter": ["../src/main.ts"]
+    }
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]

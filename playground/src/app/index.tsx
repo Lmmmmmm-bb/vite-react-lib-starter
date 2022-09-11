@@ -1,10 +1,10 @@
-import React, { FC } from 'react';
-import { HelloWorld } from '~/main';
+import { FC } from 'react';
+import { HelloWorld } from 'vite-react-lib-starter';
 
 const App: FC = () => {
   return (
     <div>
-      <div>Hello World</div>
+      Hello Playground
       <HelloWorld />
     </div>
   );
