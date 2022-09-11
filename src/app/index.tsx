@@ -1,12 +1,10 @@
 import React, { FC } from 'react';
-import { Foo, Bar, HelloWorld } from '~/main';
+import { HelloWorld } from '~/main';
 
 const App: FC = () => {
   return (
     <div>
       <div>Hello World</div>
-      <Foo />
-      <Bar />
       <HelloWorld />
     </div>
   );
