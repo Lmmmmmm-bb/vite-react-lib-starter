@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "license": "MIT",
   "packageManager": "pnpm@7.11.0",
+  "description": "A react component lib starter",
   "author": {
     "email": "lmmmmmm12138@gmail.com",
     "name": "_lmmmmmm"
@@ -10,13 +11,13 @@
   "files": [
     "dist"
   ],
+  "homepage": "https://github.com/Lmmmmmm-bb/vite-react-lib-starter",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lmmmmmm-bb/vite-react-lib-starter"
+  },
   "types": "dist/index.d.ts",
   "module": "dist/vite-react-lib-starter.mjs",
-  "exports": {
-    ".": {
-      "import": "./dist/vite-react-lib-starter.mjs"
-    }
-  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
