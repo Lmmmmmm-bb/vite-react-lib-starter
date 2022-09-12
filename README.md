@@ -11,12 +11,9 @@ A vite react lib starter.
   - [ ] description
   - [ ] homepage
   - [ ] repository
-  - [ ] types
-  - [ ] module
-- vite.config.ts
-  - [ ] build
 - playground
   - tsconfig.json
     - [ ] paths
   - vite.config.ts
+    - [ ] base
     - [ ] alias
