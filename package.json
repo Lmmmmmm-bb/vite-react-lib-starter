@@ -35,8 +35,8 @@
     "test:coverage": "vitest run --coverage",
     "test:update": "vitest -u",
     "lint:fix": "eslint --ext .tsx,.ts,.js . --fix",
-    "lint:check": "pnpm prettier --check .",
-    "lint:rewrite": "pnpm prettier --write .",
+    "lint:check": "prettier --check .",
+    "lint:rewrite": "prettier --write .",
     "prepare": "husky install",
     "prepublishOnly": "pnpm build",
     "release": "bumpp --commit --tag --push && pnpm publish --no-git-checks"
