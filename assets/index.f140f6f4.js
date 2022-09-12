@@ -66,4 +66,4 @@ Error generating stack: `+o.message+`
   padding: 0.25em 1em;
   border: 2px solid palevioletred;
   border-radius: 3px;
-`,Em=e=>{const{children:t,message:n}=e,[r,l]=kt.exports.useState(0);return Zf(km,{children:[$n("div",{children:n}),$n("div",{children:t}),r,$n(Cm,{onClick:()=>l(r+1),children:"+"})]})},xm=()=>Zf("div",{children:["Hello Playground",$n(Em,{message:"Vite Raect Lib Starter",children:"This is children"})]});ni.createRoot(document.getElementById("root")).render($n(Lr.StrictMode,{children:$n(xm,{})}));
+`,Em=e=>{const{children:t,message:n}=e,[r,l]=kt.exports.useState(0);return Zf(km,{children:[$n("div",{children:n}),$n("div",{children:t}),r,$n(Cm,{onClick:()=>l(r+1),children:"+"})]})},xm=()=>Zf("div",{children:["Hello Playground",$n(Em,{message:"Vite React Lib Starter",children:"This is children"})]});ni.createRoot(document.getElementById("root")).render($n(Lr.StrictMode,{children:$n(xm,{})}));
