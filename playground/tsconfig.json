@@ -18,7 +18,7 @@
     "jsx": "react-jsx",
     "paths": {
       "~/*": ["src/*"],
-      "vite-react-lib-starter": ["../src/main.ts"]
+      "vite-react-lib-starter": ["../src"]
     }
   },
   "include": ["src"],

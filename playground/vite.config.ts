@@ -9,7 +9,7 @@ export default defineConfig({
   resolve: {
     alias: {
       '~': resolve(__dirname, 'src'),
-      'vite-react-lib-starter': resolve(__dirname, '../src/main.ts')
+      'vite-react-lib-starter': resolve(__dirname, '../src')
     }
   }
 });
