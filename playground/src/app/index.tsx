@@ -5,7 +5,7 @@ const App: FC = () => {
   return (
     <div>
       Hello Playground
-      <HelloWorld message='Vite Raect Lib Starter'>This is children</HelloWorld>
+      <HelloWorld message='Vite React Lib Starter'>This is children</HelloWorld>
     </div>
   );
 };

@@ -11,10 +11,11 @@ export default defineConfig({
     lib: {
       entry: resolve(__dirname, 'src/main.ts'),
       name: 'ViteReactLibStarter',
-      formats: ['es']
+      formats: ['es'],
+      fileName: 'index'
     },
     rollupOptions: {
-      external: ['react', 'react-dom'],
+      external: ['react', 'react-dom', 'styled-components'],
       output: {
         globals: { react: 'React' }
       }
