@@ -2,7 +2,7 @@
   "name": "vite-react-lib-starter",
   "version": "1.1.2",
   "license": "MIT",
-  "packageManager": "pnpm@7.11.0",
+  "packageManager": "pnpm@7.12.2",
   "description": "A react component lib starter",
   "author": {
     "email": "lmmmmmm12138@gmail.com",
@@ -77,5 +77,8 @@
   "lint-staged": {
     "**/*": "prettier --write . --ignore-unknown",
     "*.{ts,tsx}": "eslint --ext .tsx,.ts,.js . --fix"
+  },
+  "dependencies": {
+    "vite-react-lib-starter": "workspace:^1.1.2"
   }
 }
