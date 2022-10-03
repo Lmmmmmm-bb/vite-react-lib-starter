@@ -65,7 +65,7 @@ importers:
 
   playground:
     specifiers:
-      vite-react-lib-starter: workspace:^1.1.2
+      vite-react-lib-starter: workspace:*
     dependencies:
       vite-react-lib-starter: link:..
 
